@@ -6,7 +6,6 @@ const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [sortBy, setSortBy] = useState("");
   const [sortDirection, setSortDirection] = useState("asc");
-  // const [cartIsShown, setCartIsShown] = useState(false);
 
   return (
     <section>

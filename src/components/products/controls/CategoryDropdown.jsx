@@ -1,14 +1,9 @@
 import { useQuery } from "react-query";
-import DropdownItem from "./dropdown/DropdownItem";
 import fetchProducts from "../api/fetchProducts";
 import Dropdown from "./dropdown/Dropdown";
 
 const CategoryDropdown = ({ setSelectedCategory, selectedCategory }) => {
-  const {
-    data: categories,
-    isLoading,
-    error,
-  } = useQuery({
+  const { data: categories } = useQuery({
     queryKey: "categories",
     queryFn: ({ signal }) => fetchProducts({ signal, options: "categories" }),
   });

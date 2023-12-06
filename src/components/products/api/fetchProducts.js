@@ -1,9 +1,5 @@
 const fetchProducts = async ({ signal, options }) => {
-  let url = `https://fakestoreapi.com/products/${options}`;
-
-  // if (query) {
-  //   url += "/" + String(query);
-  // }
+  const url = `https://fakestoreapi.com/products/${options}`;
 
   const response = await fetch(
     url,
